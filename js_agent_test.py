@@ -2,8 +2,7 @@ from langchain.schema import SystemMessage
 import streamlit as st
 import os
 from typing import Type
-# from langchain_openai import ChatOpenAI
-from langchain.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain.tools import BaseTool
 from pydantic import BaseModel, Field
 from langchain.agents import initialize_agent, AgentType
@@ -11,12 +10,12 @@ from langchain.agents import initialize_agent, AgentType
 import pandas as pd
 import sunung_calculate
 
-openai_api_key = os.environ.get("OPENAI_API_KEY")
-langchain_tracing_v2 = os.environ["LANGCHAIN_TRACING_V2"]
-langchain_api_key = os.environ.get("LANGCHAIN_API_KEY")
-langchain_project = os.environ["LANGCHAIN_PROJECT"]
-langchain_endpoint = os.environ["LANGCHAIN_ENDPOINT"]
-langsmith_tenant_id = os.environ["LANGSMITH_TENANT_ID"]
+openai_api_key = st.secrets["OPENAI_API_KEY"]
+langchain_tracing_v2 = st.secrets["LANGCHAIN_TRACING_V2"]
+langchain_api_key = st.secrets["LANGCHAIN_API_KEY"]
+langchain_project = st.secrets["LANGCHAIN_PROJECT"]
+langchain_endpoint = st.secrets["LANGCHAIN_ENDPOINT"]
+langsmith_tenant_id = st.secrets["LANGSMITH_TENANT_ID"]
 
 
 
