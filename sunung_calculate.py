@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-the_path = "./files/sunung_total_score2023.xlsx"
+the_path = "./sunung_calculator/sunung_total_score.xlsx"
 db_origin = pd.read_excel(the_path, 'DB')
 score_dup = pd.read_excel(the_path, '원표백등')
 trance_score = pd.read_excel(the_path, 'trance_tamscore')

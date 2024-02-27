@@ -3,7 +3,6 @@ env/
 __pycache__/
 files/
 chromedriver/
-.cache/
 .streamlit/
 study_ipynbs/
 user_score_result/
