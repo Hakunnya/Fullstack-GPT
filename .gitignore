@@ -6,8 +6,8 @@ chromedriver/
 .cache/
 .streamlit/
 study_ipynbs/
-pages/
 user_score_result/
+pages/
 sunung_calculate.py
 sunung_total_score2022_origin.py
 assistant_api_basecode.py
