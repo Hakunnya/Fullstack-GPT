@@ -1,1 +1,1 @@
-# Fullstack-GPT
+# OpenAI api test page with streamlit
