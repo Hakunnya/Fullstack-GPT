@@ -9,13 +9,14 @@ from langchain.agents import initialize_agent, AgentType
 
 import pandas as pd
 import sunung_calculate
-import json
 
+openai_api_key = os.environ.get("OPENAI_API_KEY")
 langchain_tracing_v2 = os.environ["LANGCHAIN_TRACING_V2"]
 langchain_api_key = os.environ.get("LANGCHAIN_API_KEY")
 langchain_project = os.environ["LANGCHAIN_PROJECT"]
 langchain_endpoint = os.environ["LANGCHAIN_ENDPOINT"]
 langsmith_tenant_id = os.environ["LANGSMITH_TENANT_ID"]
+
 
 
 llm = ChatOpenAI(temperature=0.1, model_name="gpt-3.5-turbo-1106")
